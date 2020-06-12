@@ -1,0 +1,54 @@
+body{
+	background:url(background.jpg);
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+.rc{
+	margin: 60px 20px 40px 60px ;
+}
+
+
+
+.rc img{
+	animation: backToFront 2s 1;
+}
+
+@keyframes backToFront
+{
+	0%{width: 20%;}
+	100%{width: 34%}
+}
+
+.loginform{
+	background-color: white;
+	float: right;
+	top: 10%;
+	left: 60%;
+	width: 420px;
+	height: 420px;
+	position: absolute;
+	box-sizing: border-box;
+	animation: slideInDown 2s 1;
+	
+}
+
+.loginform form{
+	margin-top: 40px;
+	padding-bottom: 20px;
+	
+}
+
+.loginform form input{
+	padding: 0px 60px 10px 60px;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+@keyframes slideInDown{
+0%{transform: translateY(-700px);}
+100%{transform: translateY(0px);}
+}
+

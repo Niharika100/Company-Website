@@ -1,0 +1,236 @@
+*
+{padding: 0; margin: 0;box-sizing: border-box;}
+body
+{
+	font-family: inherit;	 
+}
+
+
+/*slider image */
+.slider{
+	overflow: hidden;
+	margin-top: 0px;
+}
+.slider figure{
+	position: relative;
+	width: 500%;
+	left: 0;
+	margin: 0;
+	animation: 20s animi infinite;
+}
+.slider figure img{
+	float: left;
+	width: 20%;
+	margin-top: 50px;
+	height: 500px;
+}
+
+
+@keyframes animi 
+{
+	0% {left: 0%}
+	20%{left: 0%}
+	25%{left: -100%}
+	45%{left: -100%}
+	50%{left: -200%}
+	70%{left: -200%}
+	75%{left: -300%}
+	95%{left: -300%}
+	100%{left: -400%}
+}
+/* Menu bar started from here*/
+	
+.menu-bar
+{
+	background-color:black;
+	text-align:center;
+	padding-left: 100px;
+	position: fixed;
+	width: 100%;
+	z-index: 10000000;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #35783A;
+	width: 100%;
+	height: 70px;
+	line-height: 20px;
+}
+
+.menu-bar ul li
+
+{width: auto;
+margin: 10px;
+padding: 10px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration: none;color:#ACA9A8;
+}
+
+.menu{
+	display: inline-flex;
+	float: left; 
+	text-align: right; 
+	padding: -1px; 
+	margin: 0px;
+	list-style: none;
+}
+
+.active, .menu li a:hover
+{
+	color: #EF3713; 
+}
+
+.menu-bar .fa{
+	margin-left: 10px;
+}
+
+.sub-menu
+{
+	display:none;
+}
+
+.sub-menu ul li
+{
+	margin: 0px;
+}
+
+.menu-bar ul li:hover .sub-menu{
+		display: block;
+		position: absolute;
+		margin-top: 5px;
+		margin-left: -10px;
+		text-align: left;
+		height: all;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+		display: block;
+		margin:0px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li{
+	background-color: white;
+}
+
+.menu-bar .menu{
+	font-size: 17px;
+	padding: 0px;
+	margin: auto;
+	z-index: 10000000;
+}
+
+.sub-menu-1 {
+	display: none;
+	z-index: 1000000;
+}
+
+.hover2:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	margin-top:-22px;
+	margin-bottom: 0px;
+	margin-left:180px;
+	background-color: white;
+	width: 100%;
+	z-index: 1000000;
+	}
+
+.width1 ul{
+	width: 270px;
+}
+
+/* Who we are*/
+.work{
+	width: 100%;
+	float:left;
+ 	text-align: justify;
+	line-height: 30px;
+	margin-left: 50px;
+	background-color: white;
+	font-size: large;
+}
+
+.pic{
+	float: right;
+	width: 49%;
+	margin-right: 90px;
+	margin-left: 100px;
+	height: 300px;
+}
+
+/*Rotation*/
+
+.rotation{
+	display: inline-flex;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 100px;
+	padding: 50px;
+	width: auto;
+}
+
+.rotation1:hover{
+	animation: roll 3s 1;
+
+}
+
+@keyframes roll{
+	0%{transform: rotate(0);}
+	100%{transform: rotate(360deg);}
+}
+
+/*Features*/	
+.care1{
+	display: inline-flex;
+	margin: 70px 50px 100px 50px;
+	padding: -10px;
+	text-align: center;
+}
+
+.care2{
+	padding: 10px;
+}
+
+.enquiry1
+{
+	 width: 100%;
+	 display: inline-flex;
+	 background-color: #CBC0C3;
+	 padding: 0px;
+	 margin-left: 0px;
+}
+
+/*Sales Enquiry*/
+.last1{
+	display: inline-flex;
+	padding: 20px;
+	}
+
+.last2{
+	margin-left: 140px;
+	margin-top: 10px;
+}
+
+.footer{
+	display: inline-flex;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-stretch: 20px;
+	padding: 0px;
+}
+
+.footer1{margin-right: 50px;
+	margin-left: 50px;
+}
+
+.footer1 a{
+	color: #C4C7CA;
+	text-decoration: none;
+}
+
+
